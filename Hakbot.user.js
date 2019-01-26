@@ -762,7 +762,7 @@ function setAdvancedEditor(){
             clearInterval(checkExistDisqus);
 		}
 	}, 1000);
-}}
+}
 
 function createSmileyDiv(hidden,caller,sibling){
     var smileyDiv = document.createElement ('div');
