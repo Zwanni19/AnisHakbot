@@ -186,7 +186,7 @@
 			//Setting the Interface
 			//=======================================================
 			setInterface(botRunning);
-			// setAdvancedEditor();
+			setAdvancedEditor();
 			setReplyOnclick();
             if (botRunning && botSites.indexOf(document.getElementsByClassName("community-name")[0].innerText)>-1){
                 hakBot();
