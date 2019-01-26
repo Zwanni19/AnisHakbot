@@ -651,34 +651,6 @@ function clearUrl(textArea){
     }
 }
 
-function clearWords(textArea){
-    var expression = /(Mario|Nigga|mario|nigga|Nigger|nigger|Bimbo|bimbo|Harms|harms|Down|down|Rapdeutschland|rapdeutschland|#generischeFrontGenerator)/g;
-    var regex = new RegExp(expression);
-    if(textArea.innerHTML.match(regex)){
-        var selectedText = getSelectedText();
-        var savedSelection = saveSelection(textArea,0);
-        textArea.innerHTML=textArea.innerHTML.replace("Mario","Mаrio");
-        textArea.innerHTML=textArea.innerHTML.replace("Nigga","Niggа");
-	textArea.innerHTML=textArea.innerHTML.replace("Nigger","Niggа");
-	textArea.innerHTML=textArea.innerHTML.replace("nigger","Niggа");
-	textArea.innerHTML=textArea.innerHTML.replace("mario","Mаrio");
-        textArea.innerHTML=textArea.innerHTML.replace("nigga","Niggа");
-	textArea.innerHTML=textArea.innerHTML.replace("bimbo","Вimbo");
-	textArea.innerHTML=textArea.innerHTML.replace("Bimbo","Вimbo");
-	textArea.innerHTML=textArea.innerHTML.replace("Harms","Hаrms");
-	textArea.innerHTML=textArea.innerHTML.replace("harms","Hаrms");
-	textArea.innerHTML=textArea.innerHTML.replace("Down","Dоwn");
-	textArea.innerHTML=textArea.innerHTML.replace("down","dоwn");
-	    textArea.innerHTML=textArea.innerHTML.replace("rapdeutschland","Rаpdeutschland");
-	    textArea.innerHTML=textArea.innerHTML.replace("Rapdeutschland","Rаpdeutschland");
-	if (document.getElementsByName("User Menu")[0].innerText.indexOf("RUCnntn") > -1 || document.getElementsByName("User Menu")[0].innerText.indexOf("RTC") > -1){
-        	textArea.innerText=textArea.innerText.replace("#generischeFrontGenerator",generateFront(textArea));
-	}
-        restoreSelection(textArea, savedSelection);
-        console.log("Mario/nignog");
-    }
-}
-
 function setReplyOnclick(){
 	var checkExistDisqus = setInterval(function() {
 		var replies = document.getElementsByClassName("reply");
@@ -707,7 +679,7 @@ function setAdvancedEditor(){
             console.log(document.getElementsByClassName("btn post-action__button"));
 			var sndButton = document.getElementsByClassName("btn post-action__button")[0];
 			var boldButton = document.createElement ('div');
-			boldButton.innerHTML='<a style="color:white;"><b>b</b></a>';
+			// boldButton.innerHTML='<a style="color:white;"><b>b</b></a>';
 			boldButton.setAttribute ('class', 'editBtn editBold btn post-action__button');
 			//
             var textArea=document.getElementsByClassName("btn post-action__button")[0].parentNode.parentNode.parentNode.parentNode.parentNode.firstChild.getElementsByClassName("textarea")[0];
@@ -716,7 +688,7 @@ function setAdvancedEditor(){
 				createTag(textArea,"<b>","</b>");
 			});
 			var italicButton = document.createElement ('div');
-			italicButton.innerHTML='<a style="color:white;"><i>i</i></a>';
+			// italicButton.innerHTML='<a style="color:white;"><i>i</i></a>';
 			italicButton.setAttribute ('class', 'editBtn edititalic btn post-action__button');
 			//
 			document.getElementsByClassName("temp-post")[0].appendChild(italicButton);
@@ -724,7 +696,7 @@ function setAdvancedEditor(){
 				createTag(textArea,"<i>","</i>");
 			});
 			var underButton = document.createElement ('div');
-			underButton.innerHTML='<a style="color:white;"><u>u</u></a>';
+			// underButton.innerHTML='<a style="color:white;"><u>u</u></a>';
 			underButton.setAttribute ('class', 'editBtn editunder btn post-action__button');
 			//
 			document.getElementsByClassName("temp-post")[0].appendChild(underButton);
@@ -732,7 +704,7 @@ function setAdvancedEditor(){
 				createTag(textArea,"<u>","</u>");
 			});
 			var scribbleButton = document.createElement ('div');
-			scribbleButton.innerHTML='<a style="color:white;"><s>s</s></a>';
+			// scribbleButton.innerHTML='<a style="color:white;"><s>s</s></a>';
 			scribbleButton.setAttribute ('class', 'editBtn editscribble btn post-action__button');
 			//
 			document.getElementsByClassName("temp-post")[0].appendChild(scribbleButton);
@@ -740,7 +712,7 @@ function setAdvancedEditor(){
 				createTag(textArea,"<s>","</s>");
 			});
 			var quoteButton = document.createElement ('div');
-			quoteButton.innerHTML='<a style="color:white;"><blockquote>„"</blockquote></a>';
+			// quoteButton.innerHTML='<a style="color:white;"><blockquote>„"</blockquote></a>';
 			quoteButton.setAttribute ('class', 'editBtn editquote btn post-action__button');
 			//
 			document.getElementsByClassName("temp-post")[0].appendChild(quoteButton);
@@ -748,7 +720,7 @@ function setAdvancedEditor(){
 				createTag(textArea,"<blockquote>","</blockquote>");
 			});
 			var spoilerButton = document.createElement ('div');
-			spoilerButton.innerHTML='<a style="color:white;"><spoiler>Spoiler</spoiler></a>';
+			// spoilerButton.innerHTML='<a style="color:white;"><spoiler>Spoiler</spoiler></a>';
 			spoilerButton.setAttribute ('class', 'editBtnBig editspoiler btn post-action__button');
 			//
 			document.getElementsByClassName("temp-post")[0].appendChild(spoilerButton);
@@ -766,7 +738,7 @@ function setAdvancedEditor(){
 			});
 
 			var makroButton = document.createElement ('div');
-			makroButton.innerHTML='<a style="color:white;">Makro</a>';
+			makroButton.innerHTML='<a style="color:white;">Makros</a>';
 			makroButton.setAttribute ('class', 'editMain editBtnBig editMakro btn post-action__button');
 			//
 			document.getElementsByClassName("temp-post")[0].appendChild(makroButton);
