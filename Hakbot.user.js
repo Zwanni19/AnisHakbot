@@ -650,6 +650,30 @@ function setAdvancedEditor(){
 			$(".editunder").click(function(e) {
 				createTag(textArea,"<u>","</u>");
 			});
+			var scribbleButton = document.createElement ('div');
+			scribbleButton.innerHTML='<a style="color:white;"><s>s</s></a>';
+			scribbleButton.setAttribute ('class', 'editBtn editscribble btn post-action__button');
+			//
+			document.getElementsByClassName("temp-post")[0].appendChild(scribbleButton);
+			$(".editscribble").click(function(e) {
+				createTag(textArea,"<s>","</s>");
+			});
+			var quoteButton = document.createElement ('div');
+			quoteButton.innerHTML='<a style="color:white;"><blockquote>„"</blockquote></a>';
+			quoteButton.setAttribute ('class', 'editBtn editquote btn post-action__button');
+			//
+			document.getElementsByClassName("temp-post")[0].appendChild(quoteButton);
+			$(".editquote").click(function(e) {
+				createTag(textArea,"<blockquote>","</blockquote>");
+			});
+			var spoilerButton = document.createElement ('div');
+			spoilerButton.innerHTML='<a style="color:white;"><spoiler>Spoiler</spoiler></a>';
+			spoilerButton.setAttribute ('class', 'editBtnBig editspoiler btn post-action__button');
+			//
+			document.getElementsByClassName("temp-post")[0].appendChild(spoilerButton);
+			$(".editspoiler").click(function(e) {
+				createTag(textArea,"<spoiler>","</spoiler>");
+			});
 
 			var smileyButton = document.createElement ('div');
 			smileyButton.innerHTML='<a style="color:white;">&#128512;</a>';
