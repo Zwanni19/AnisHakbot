@@ -749,7 +749,7 @@ function setAdvancedEditor(){
             $("button.post-action__button").unbind("click").click(function(){
 				console.log("clicked");
 				if ($(".MakroContainer").length){
-					//console.log("Makro");
+					//console.log("Makros");
 					$(".MakroContainer").remove();
 				}
 				if ($("#smileyContainer").length){
