@@ -1,8 +1,8 @@
 //==UserScript==
-//@name         RU Bot
+//@name         RU Bot - 31GG Version
 //@namespace    http://tampermonkey.net/
 //@version      3.0.6-31
-//@description  Make RU great Again
+//@description  Make 31 greater
 //@updateURL    https://raw.githubusercontent.com/rapupdate/AnisHakbot/master/Hakbot.user.js
 //@downloadURL  https://raw.githubusercontent.com/rapupdate/AnisHakbot/master/Hakbot.user.js
 //@author       You
