@@ -687,41 +687,41 @@ function setAdvancedEditor(){
 			$(".editBold").click(function(e) {
 				createTag(textArea,"<b>","</b>");
 			});
-			var italicButton = document.createElement ('div');
+			// var italicButton = document.createElement ('div');
 			// italicButton.innerHTML='<a style="color:white;"><i>i</i></a>';
-			italicButton.setAttribute ('class', 'editBtn edititalic btn post-action__button');
+			// italicButton.setAttribute ('class', 'editBtn edititalic btn post-action__button');
 			//
 			document.getElementsByClassName("temp-post")[0].appendChild(italicButton);
 			$(".edititalic").click(function(e) {
 				createTag(textArea,"<i>","</i>");
 			});
-			var underButton = document.createElement ('div');
+			// var underButton = document.createElement ('div');
 			// underButton.innerHTML='<a style="color:white;"><u>u</u></a>';
-			underButton.setAttribute ('class', 'editBtn editunder btn post-action__button');
+			// underButton.setAttribute ('class', 'editBtn editunder btn post-action__button');
 			//
 			document.getElementsByClassName("temp-post")[0].appendChild(underButton);
 			$(".editunder").click(function(e) {
 				createTag(textArea,"<u>","</u>");
 			});
-			var scribbleButton = document.createElement ('div');
+			// var scribbleButton = document.createElement ('div');
 			// scribbleButton.innerHTML='<a style="color:white;"><s>s</s></a>';
-			scribbleButton.setAttribute ('class', 'editBtn editscribble btn post-action__button');
+			// scribbleButton.setAttribute ('class', 'editBtn editscribble btn post-action__button');
 			//
 			document.getElementsByClassName("temp-post")[0].appendChild(scribbleButton);
 			$(".editscribble").click(function(e) {
 				createTag(textArea,"<s>","</s>");
 			});
-			var quoteButton = document.createElement ('div');
+			// var quoteButton = document.createElement ('div');
 			// quoteButton.innerHTML='<a style="color:white;"><blockquote>„"</blockquote></a>';
-			quoteButton.setAttribute ('class', 'editBtn editquote btn post-action__button');
+			// quoteButton.setAttribute ('class', 'editBtn editquote btn post-action__button');
 			//
 			document.getElementsByClassName("temp-post")[0].appendChild(quoteButton);
 			$(".editquote").click(function(e) {
 				createTag(textArea,"<blockquote>","</blockquote>");
 			});
-			var spoilerButton = document.createElement ('div');
+			// var spoilerButton = document.createElement ('div');
 			// spoilerButton.innerHTML='<a style="color:white;"><spoiler>Spoiler</spoiler></a>';
-			spoilerButton.setAttribute ('class', 'editBtnBig editspoiler btn post-action__button');
+			// spoilerButton.setAttribute ('class', 'editBtnBig editspoiler btn post-action__button');
 			//
 			document.getElementsByClassName("temp-post")[0].appendChild(spoilerButton);
 			$(".editspoiler").click(function(e) {
