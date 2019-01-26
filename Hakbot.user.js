@@ -186,7 +186,7 @@
 			//Setting the Interface
 			//=======================================================
 			setInterface(botRunning);
-			setAdvancedEditor();
+			// setAdvancedEditor();
 			setReplyOnclick();
             if (botRunning && botSites.indexOf(document.getElementsByClassName("community-name")[0].innerText)>-1){
                 hakBot();
@@ -663,9 +663,9 @@ function setReplyOnclick(){
 	}, 100);
 }
 
-function addAdvancedEditor(){
-	setAdvancedEditorReply(this);
-}
+// function addAdvancedEditor(){
+//	setAdvancedEditorReply(this);
+//}
 
 function readComment(comment){
 	var msg = new SpeechSynthesisUtterance(comment);
