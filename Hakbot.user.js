@@ -674,9 +674,9 @@ function readComment(comment){
 
 function setAdvancedEditor(){
 	var checkExistDisqus = setInterval(function() {
-		console.log(document.getElementsByClassName("btn post-action__button"));
+		// console.log(document.getElementsByClassName("btn post-action__button"));
         if (document.getElementsByClassName("btn post-action__button").length > 0 && !document.getElementsByClassName("temp-post")[0].classList.contains("advanced") && document.getElementsByClassName("username").length>0) {
-            console.log(document.getElementsByClassName("btn post-action__button"));
+           //  console.log(document.getElementsByClassName("btn post-action__button"));
 			// var sndButton = document.getElementsByClassName("btn post-action__button")[0];
 			// var boldButton = document.createElement ('div');
 			// boldButton.innerHTML='<a style="color:white;"><b>b</b></a>';
@@ -762,7 +762,7 @@ function setAdvancedEditor(){
             clearInterval(checkExistDisqus);
 		}
 	}, 1000);
-}
+}}
 
 function createSmileyDiv(hidden,caller,sibling){
     var smileyDiv = document.createElement ('div');
