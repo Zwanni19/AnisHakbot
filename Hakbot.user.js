@@ -1375,22 +1375,22 @@ function setInterface(botRunning){
 				document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Digger Spam mal nicht Empfehlen Button!"><input type="checkbox" id="hideRecommend" '+boxStatusRecommend+'><span class="label helper">Empfehlen ausblenden</span></a><br>';
 				document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Fast Send - Schneller Spammen, einfach Enter Drücken"><input type="checkbox" id="fastSend" '+boxStatusFastSend+'><span class="label helper">Fast Send - Enter zum Abschicken von Comments, Shift Enter für neue Zeile</span></a><br>';
                 document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Sneaky Peaky - Zufallszeiten bei Clicks um Menschlich zu wirken"><input type="checkbox" id="natural" '+boxStatusNatural+'><span class="label helper">Natürlicher Modus - zufällige Klickzeiten</span></a><br>';
-				document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Nie wieder auf Fake RU-Links reinfallen!"><input type="checkbox" id="fakeBot" '+boxStatus+'><span class="label helper">FakeLinks hervorheben (Benötigt XMLHTTP-Requests)</span></a><br>';
+				/*document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Nie wieder auf Fake RU-Links reinfallen!"><input type="checkbox" id="fakeBot" '+boxStatus+'><span class="label helper">FakeLinks hervorheben (Benötigt XMLHTTP-Requests)</span></a><br>';
                 document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Lass mal jetzt die comments in Ruhe!"><input type="checkbox" id="comment" '+boxStatusComment+'><span class="label helper">Sollen die Kommentare geparst werden? (Benötigt für: Youtube und Bilder einbettung und Links Clickbar machen)</span></a><br>';
 				document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Bunte Bilder im Feed sind schon schön <3"><input type="checkbox" id="embedImages" '+boxStatusEmbed+'><span class="label helper">Bilder automatisch einbetten</span></a><br>';
-                document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Dance zu Musik und Videos ausm Grind"><input type="checkbox" id="embedYoutube" '+boxStatusYoutube+'><span class="label helper">Youtube automatisch einbetten</span></a><br>';
+                document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Dance zu Musik und Videos ausm Grind"><input type="checkbox" id="embedYoutube" '+boxStatusYoutube+'><span class="label helper">Youtube automatisch einbetten</span></a><br>';*/
 				document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Poste nur wenn Quote gut ist!"><input type="checkbox" id="showQuote" '+boxStatusQuote+'><span class="label helper">Hakquote anzeigen</span></a><br>';
 				document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Persönlicher Fetisch"><input type="checkbox" id="quafflesBot" '+boxStatusQuaffles+'><span class="label helper">Darth Qualli Waffles Profilbild auf altes Tony D Bild ändern</span></a><br>';
-				document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Nie wieder zu spät zur Party!"><input type="checkbox" id="checkArticle" '+boxStatusArticle+'><span class="label helper">Auf neue Artikel checken (Benötigt XMLHTTP-Requests)</span></a><br>';
+				/*document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Nie wieder zu spät zur Party!"><input type="checkbox" id="checkArticle" '+boxStatusArticle+'><span class="label helper">Auf neue Artikel checken (Benötigt XMLHTTP-Requests)</span></a><br>';
 				document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Weck mich auf wenn neuer Artikel du hont!"><input type="checkbox" id="notifyArticle" '+boxStatusNotify+'><span class="label helper">Benachrichtigung wenn ein neuer Artikel vorhanden ist (Benötigt Auf neue Artikel checken!)</span></a><br>';
 				document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Zack und rüber mit mir!"><input type="checkbox" id="switchArticle" '+boxStatusSwitch+'><span class="label helper">Automatisch auf neuen Artikel wechseln (Benötigt Auf neue Artikel checken!)</span></a><br>';
-                document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Verlinkungen endlich wieder einfach nur eintippen... Puh wie geil ist das denn?"><input type="checkbox" id="clearUrl" '+boxStatusUrl+'><span class="label helper">URLs in Postfähige Form verwandeln</span></a><br>';
+                document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Verlinkungen endlich wieder einfach nur eintippen... Puh wie geil ist das denn?"><input type="checkbox" id="clearUrl" '+boxStatusUrl+'><span class="label helper">URLs in Postfähige Form verwandeln</span></a><br>';*/
                 document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Es nervt manchmal, aber glaubt mir es ist zu eurem Besten"><input type="checkbox" id="reloadBot" '+boxStatusReload+'><span class="label helper">Reload Bot - Lädt Disqus automatisch neu (Empfohlen!)</span></a><br>';
                 document.getElementById("settings").innerHTML += '<a class="dropdown-toggle"  title="Wenn natürlicher Modus an ist, werden bis zu 2 Minuten auf diesen Wert raufgerechnet"><span class="label helper">Reload Interval (In Minuten): </span><input type="Number" id="reloadTime" value="'+reloadTime+'" min="1" max="60"></input><input id="setReloadTime" type="button" value="Speichern" style="margin:20px"></input></a><br>';
 
 				blacklistDiv.innerHTML += '<hr><br><h3>Über den Hakbot</h3>';
 				blacklistDiv.innerHTML += '<i>Version: '+GM_info["script"]["version"]+'</i><br>';
-				blacklistDiv.innerHTML += '<i>Autor: <a href="https://disqus.com/by/HotLove666/">Anis Fencheltee</a></i><br>';
+				blacklistDiv.innerHTML += '<i>Autor: <a href="https://disqus.com/by/HotLove666/">Anis Fencheltee</a>+ Zwanner Zerstörung</i><br>';
 				blacklistDiv.innerHTML += '<i>Readme: <a href="https://github.com/rapupdate/AnisHakbot/blob/master/README.md">Klick hier</i><br>';
 				blacklistDiv.innerHTML += '<i>Probleme oder Wünsche? <a href="https://github.com/rapupdate/AnisHakbot/issues">Klick hier</i><br><br>';
 				$('#hakMode').val(mode).change();
@@ -1402,14 +1402,14 @@ function setInterface(botRunning){
 					GM_setValue("hakMode",this.value);
 					location.reload();
 				});
-                $("#embedYoutube").click(function(e){
+                /*$("#embedYoutube").click(function(e){
 					toggleSetting(this,"embedYoutube");
 				});
 
 				$("#switchArticle").click(function(e){
 					toggleSetting(this,"switchArticle");
 				});
-
+*/
 				$("#hideRecommend").click(function(e){
 					toggleSetting(this,"hideRecommend");
 				});
@@ -1421,10 +1421,10 @@ function setInterface(botRunning){
 					toggleSetting(this,"askDisqus");
 				});
 
-				$("#embedImages").click(function(e){
+				/*$("#embedImages").click(function(e){
 					toggleSetting(this,"embedImages");
 				});
-
+*/
 				$("#showDownvotes").click(function(e){
 					toggleSetting(this,"showDownvotes");
 				});
@@ -1432,13 +1432,13 @@ function setInterface(botRunning){
 				$("#answerHak").click(function(e){
 					toggleSetting(this,"answerHak");
 				});
-
+/*
 				$("#notifyArticle").click(function(e){
 					toggleSetting(this,"articleNotification");
 				});
 				$("#fakeBot").click(function(e){
 					toggleSetting(this,"checkLinks");
-				});
+				});*/
 				$("#quafflesBot").click(function(e){
 					toggleSetting(this,"quaffles");
 				});
@@ -1449,13 +1449,13 @@ function setInterface(botRunning){
 
                 $("#reloadBot").click(function(e){
 					toggleReloadBot(this);
-				});
+				});/*
                 $("#clearUrl").click(function(e){
 					toggleSetting(this,"clearUrl");
 				});
 				$("#checkArticle").click(function(e){
 					toggleSetting(this,"checkArticle");
-				});
+				});*/
                 $("#setReloadTime").click(function(e){
 					setReloadTime(document.getElementById("reloadTime").value);
 				});
