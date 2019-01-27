@@ -22,7 +22,7 @@ Bot der Ru ein wenig aufmöbelt...
 		* Whitelist nach Disqus ID: User können per Dropdown im Commentar auf die Disqus Whitelist gesetzt und von dieser entfernt werden 
 		* Whitelist nach Namepattern: Namepattern, also Usernames oder Clans können per Formular in der Whitelist Konfiguration geblacklisted werden 
 	
-* ~~Erweiterter Kommentar Editor - Icons für Fettschrift, Kursiv, Unterstrichen oder Durchgestrichen werden beim Kommentarfeld eingeblendet Wird ein Text im Kommentar markiert und einer der Knöpf gedrückt werden die notwendigen HTML Tags gesetzt um den Text so darzustellen ~~
+* ~~ Erweiterter Kommentar Editor - Icons für Fettschrift, Kursiv, Unterstrichen oder Durchgestrichen werden beim Kommentarfeld eingeblendet Wird ein Text im Kommentar markiert und einer der Knöpf gedrückt werden die notwendigen HTML Tags gesetzt um den Text so darzustellen ~~
 * Zinkus Button - Reloadet das Disqus Plugin um im Falle von Zinkus nicht ganze RU Seite neuladen zu müssen 
 * Kommentare nachladen - Neue Kommentare und Antworten werden automatisch nachgeladen 
 * Hak Bot,Komentare nachladen, automatischer Reload des Disqus Plugins können per Userinterface ausgeschaltet werden 
