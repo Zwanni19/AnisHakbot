@@ -1390,7 +1390,7 @@ function setInterface(botRunning){
 
 				blacklistDiv.innerHTML += '<hr><br><h3>Über den Hakbot</h3>';
 				blacklistDiv.innerHTML += '<i>Version: '+GM_info["script"]["version"]+'</i><br>';
-				blacklistDiv.innerHTML += '<i>Autor: <a href="https://disqus.com/by/HotLove666/">Anis Fencheltee</a>+ Zwanner Zerstörung</i><br>';
+				blacklistDiv.innerHTML += '<i>Autor: <a href="https://disqus.com/by/HotLove666/">Anis Fencheltee</a> + Zwanner Zerstörung</i><br>';
 				blacklistDiv.innerHTML += '<i>Readme: <a href="https://github.com/rapupdate/AnisHakbot/blob/master/README.md">Klick hier</i><br>';
 				blacklistDiv.innerHTML += '<i>Probleme oder Wünsche? <a href="https://github.com/rapupdate/AnisHakbot/issues">Klick hier</i><br><br>';
 				$('#hakMode').val(mode).change();
