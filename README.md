@@ -22,17 +22,17 @@ Bot der Ru ein wenig aufmöbelt...
 		* Whitelist nach Disqus ID: User können per Dropdown im Commentar auf die Disqus Whitelist gesetzt und von dieser entfernt werden 
 		* Whitelist nach Namepattern: Namepattern, also Usernames oder Clans können per Formular in der Whitelist Konfiguration geblacklisted werden 
 	
-* Erweiterter Kommentar Editor - Icons für Fettschrift, Kursiv, Unterstrichen oder Durchgestrichen werden beim Kommentarfeld eingeblendet Wird ein Text im Kommentar markiert und einer der Knöpf gedrückt werden die notwendigen HTML Tags gesetzt um den Text so darzustellen 
+* ~~Erweiterter Kommentar Editor - Icons für Fettschrift, Kursiv, Unterstrichen oder Durchgestrichen werden beim Kommentarfeld eingeblendet Wird ein Text im Kommentar markiert und einer der Knöpf gedrückt werden die notwendigen HTML Tags gesetzt um den Text so darzustellen 
 * Zinkus Button - Reloadet das Disqus Plugin um im Falle von Zinkus nicht ganze RU Seite neuladen zu müssen 
 * Kommentare nachladen - Neue Kommentare und Antworten werden automatisch nachgeladen 
 * Hak Bot,Komentare nachladen, automatischer Reload des Disqus Plugins können per Userinterface ausgeschaltet werden 
 * Statusanzeige im Communitynamen (Rot=Bot aus, Grün=Bot an) 
 * Bot differenziert zwischen den Seiten, er startet nur, wenn die Seite ihm bekannt ist.
 * Makros - User können sich Texte als Makro speichern und diese per Mausklick posten/als Antwort schicken
-* Fakelinkchecker - Überprüft ob Rapupdate Links zu Artikeln führen oder nicht, Fakes werden durch "(Fake!)" hervorgehoben
-* Links werden Postbar gemacht - Wenn ein link eingegeben wird, wird dieser in Postbare Form gebracht
+* ~~Fakelinkchecker - Überprüft ob Rapupdate Links zu Artikeln führen oder nicht, Fakes werden durch "(Fake!)" hervorgehoben~~
+* ~~Links werden Postbar gemacht - Wenn ein link eingegeben wird, wird dieser in Postbare Form gebracht
 * Kommentare können vorgelesen werden
-* Neue Artikel Checker - Bringt Infofeld über Kommentarbereich, Webnotification und automatischen Wechsel auf neuen Kommentar
+* ~~Neue Artikel Checker - Bringt Infofeld über Kommentarbereich, Webnotification und automatischen Wechsel auf neuen Kommentar
 * FastSend - Abschicken von Kommentaren per Enter, Neue Zeile per Shift+Enter
 * Show Downvotes - Zeigt einen kleinen Counter mit Downvotes an. Beta: Daten sind nicht immer Korrekt!
 * HakQuote - Zeigt die aktuelle Hakquote an
