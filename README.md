@@ -1,3 +1,11 @@
+# 31GG Edition des Hakbots.
+
+Anis sein Hakbot in der letzten finalen Version inclusive solved issues:
+https://github.com/rapupdate/AnisHakbot/issues/26
+https://github.com/rapupdate/AnisHakbot/issues/27
+
+s/o Anis für die elendige Mühe die in dem Hakbot steckt und hoffe das Projekt läuft weiter so stabil
+
 # Anis RU-Toolbox
 
 Bot der Ru ein wenig aufmöbelt...
