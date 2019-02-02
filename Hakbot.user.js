@@ -80,12 +80,12 @@
 
 			var hideRecommend = GM_getValue("hideRecommend");
 			if (typeof hideRecommend=='undefined'){
-				GM_setValue("hideRecommend",true);
+				GM_setValue("hideRecommend",false);
 				hideRecommend = GM_getValue("hideRecommend");
 			}
             var embedYoutube = GM_getValue("embedYoutube");
 			if (typeof embedYoutube=='undefined'){
-				GM_setValue("embedYoutube",true);
+				GM_setValue("embedYoutube",false);
 				embedYoutube = GM_getValue("embedYoutube");
 			}
             var comment = GM_getValue("comment");
@@ -122,12 +122,12 @@
 
 			var fastSendStatus = GM_getValue("fastSend");
 			if (typeof fastSendStatus=='undefined'){
-				GM_setValue("fastSend",false);
+				GM_setValue("fastSend",true);
 			}
 
 			var embedImages = GM_getValue("embedImages");
 			if (typeof embedImages=='undefined'){
-				GM_setValue("embedImages",true);
+				GM_setValue("embedImages",false);
 			}
 
 			if (typeof FakeLinkChecker=='undefined'){
@@ -150,12 +150,12 @@
 
 			var articleNotification = GM_getValue("articleNotification");
 			if (typeof articleNotification=='undefined'){
-				GM_setValue("articleNotification",true);
+				GM_setValue("articleNotification",false);
 			}
 
 			var clearUrl = GM_getValue("clearUrl");
 			if (typeof clearUrl=='undefined'){
-				GM_setValue("clearUrl",true);
+				GM_setValue("clearUrl",false);
 			}
 
 			var loadComments = GM_getValue("loadComments");
