@@ -80,7 +80,7 @@
 
 			var hideRecommend = GM_getValue("hideRecommend");
 			if (typeof hideRecommend=='undefined'){
-				GM_setValue("hideRecommend",false);
+				GM_setValue("hideRecommend",true);
 				hideRecommend = GM_getValue("hideRecommend");
 			}
             var embedYoutube = GM_getValue("embedYoutube");
@@ -255,18 +255,11 @@ function loading(){
 /* ZWANNER SHARE AUSBLENDEN */
 function hideRecommendBot(){
 	var recommend = setInterval(function(){
-		var recommendButton=document.getElementById("recommend-button");
+		var recommendButton=document.getElementById("recommend-button", "thread-share-bar");
 		if(typeof recommendButton !="undefined"){
 			recommendButton.setAttribute("style", "display:none");
-		}
-		var shareButton=document.getElementById("thread-share-bar");
-		if(typeof shareButton !="undefined"){
-			shareButton.setAttribute("style", "display:none");
 			clearInterval(recommend);
 		}
-			
-		
-
 	},100);
 }
 function quoteBot() {
