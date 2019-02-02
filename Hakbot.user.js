@@ -255,7 +255,7 @@ function loading(){
 /* ZWANNER SHARE AUSBLENDEN */
 function hideRecommendBot(){
 	var recommend = setInterval(function(){
-		var recommendButton=document.getElementById("recommend-button", "thread-share-bar");
+		var recommendButton=document.getElementById("recommend-button" & "thread-share-bar");
 		if(typeof recommendButton !="undefined"){
 			recommendButton.setAttribute("style", "display:none");
 			clearInterval(recommend);
