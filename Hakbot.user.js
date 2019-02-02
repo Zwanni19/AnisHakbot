@@ -252,12 +252,18 @@ function loading(){
 	},100);
 
 }
-
+/* ZWANNER SHARE AUSBLENDEN */
 function hideRecommendBot(){
 	var recommend = setInterval(function(){
 		var recommendButton=document.getElementById("recommend-button");
 		if(typeof recommendButton !="undefined"){
 			recommendButton.setAttribute("style", "display:none");
+			clearInterval(recommend);
+		}
+	var share = setInterval(function(){
+		var shareButton=document.getElementById("thread-share-bar");
+		if(typeof shareButton !="undefined"){
+			shareButton.setAttribute("style", "display:none");
 			clearInterval(recommend);
 		}
 	},100);
